@@ -14,35 +14,33 @@
 
 
 char inputChar() {
-	int num = rand() % 128;			// random ASCII code in the range [0,127] = valid ASCII characters
-	char c = num;					// convert code to character
+	// random ASCII code in the range [0,127] = valid ASCII characters:
+	int num = rand() % 128;
+	// convert code to character:
+	char c = num;
 	
     return c;
 }
 
 char inputCharLowercase() {
-	int num = (rand() % 26) + 97;	// random ASCII code in the range [97,122] = lowercase alphabet letters
-	char c = num;					// convert code to character
+	// random ASCII code in the range [97,122] = lowercase alphabet letters:
+	int num = (rand() % 26) + 97;
+	// convert code to character:
+	char c = num;
 	
     return c;
 }
 
 char* inputString() {
-	// 5 random lowercase alphabet letters:
-	char char0 = inputCharLowercase();
-	char char1 = inputCharLowercase();
-	char char2 = inputCharLowercase();
-	char char3 = inputCharLowercase();
-	char char4 = inputCharLowercase();
-
 	// create string of length 6 characters (including null character at end):
     char *str = (char *) malloc(sizeof(char) * 6);
-    str[0] = char0;
-    str[1] = char1;
-	str[2] = char2;
-	str[3] = char3;
-	str[4] = char4;
-    str[5] = '\0';		// null character
+
+	// fill string with 5 random characters:
+	for(int i=0; i<5; i++) {
+		str[i] = inputCharLowercase();
+	}
+	// end string with null character:
+    str[5] = '\0';
 	
     return str;
 }
