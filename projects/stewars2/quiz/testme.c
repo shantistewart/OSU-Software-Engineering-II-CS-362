@@ -84,7 +84,7 @@ void testme() {
 
 
 int main() {
-    srand(time(NULL));
+	srand(time(NULL));
 	
 	testme();
 	
@@ -97,5 +97,5 @@ int main() {
 	*/
 	
 	printf("\n");
-    return 0;
+	return 0;
 }
