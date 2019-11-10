@@ -1,1 +1,0 @@
-testme: testme.c
