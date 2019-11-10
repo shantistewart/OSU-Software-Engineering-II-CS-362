@@ -88,14 +88,6 @@ int main() {
 	
 	testme();
 	
-	// Testing inputString():
-	/*
-	for(int i=0; i<6; i++) {
-		char* str = inputString();
-		printf("%s\n", str);
-	}
-	*/
-	
 	printf("\n");
 	return 0;
 }
