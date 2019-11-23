@@ -99,17 +99,14 @@ int main() {
             state->deckCount[j] = 0;
             // randomize size of deck in range [0,10]:
             deck_size = rand() % 11;
-            // printf("Player %d's deck size: %d\n", j, deck_size);
             // fill deck with random (valid) cards:
             for(k=0; k<deck_size; k++) {
                 // random (valid) card in range [curse, treasure_map] = [0, 26]:
                 card = rand() % 27;
                 state->deck[j][k] = card;
-                // printf("%d ", state->deck[j][k]);
                 // increment deck size of Player j:
                 state->deckCount[j]++;
             }
-            // printf("\n");
         }
         
         // randomize all player's discard pile size:
@@ -118,23 +115,18 @@ int main() {
             state->discardCount[j] = 0;
             // randomize size of discard pile in range [0,10]:
             discard_size = rand() % 11;
-            // printf("Player %d's discard pile size: %d\n", j, discard_size);
             // fill discard pile with random (valid) cards:
             for(k=0; k<discard_size; k++) {
                 // random (valid) card in range [curse, treasure_map] = [0, 26]:
                 card = rand() % 27;
                 state->discard[j][k] = card;
-                // printf("%d ", state->discard[j][k]);
                 // increment discard pile size of Player j:
                 state->discardCount[j]++;
             }
-            // printf("\n");
         }
         
         
         // 3. save variables for tribute_card() and call function:
-        
-        // arrays used in testing (dependent on numPlayers):
         
         // save prior numActions of current player:
         numActions = state->numActions;
