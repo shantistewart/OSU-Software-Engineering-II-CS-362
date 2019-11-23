@@ -17,7 +17,7 @@
 
 
 int main() {
-    printf("----------------- Random Test for Minion Card (Refactored) ----------------\n");
+    printf("----------------- Random Test for Tribute Card (Refactored) ----------------\n");
     
     srand(time(NULL));
     
