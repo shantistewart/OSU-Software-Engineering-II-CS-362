@@ -132,7 +132,7 @@ int main() {
         numActions = state->numActions;
         // save prior coin count of current player:
         coin_count = state->coins;
-        // save current player's hand size:
+        // save current player's prior hand size:
         hand_size_current = state->handCount[current_player];
         // save next player's prior deck size:
         deck_size_next = state->deckCount[nextPlayer];
